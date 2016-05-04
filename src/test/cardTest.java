@@ -12,7 +12,7 @@ import FourRowSolitaire.Card;
 
 
 
-public class cardTest {
+public class CardTest {
 	
 	private Card card1, card2, card3, card4;
 

@@ -11,7 +11,7 @@ import org.junit.Test;
 import FourRowSolitaire.Card;
 import FourRowSolitaire.Column;
 
-public class columnTest {
+public class ColumnTest {
 	
 	Card card1, card2, card3, card4;
 	Column column1;
