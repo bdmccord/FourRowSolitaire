@@ -43,16 +43,6 @@ public class SingleCell extends CardStack
         return null;
     }
     
-    /**
-     * Added 5.3.2016
-     * If the cell is empty return null, else return super class pop
-     */
-    public Card pop(){
-    	if(!isEmpty()){
-    		return super.pop();
-    	}
-    	return null;
-    }
     
     public Card getCardAtLocation(Point p)
     {

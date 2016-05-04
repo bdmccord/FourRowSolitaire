@@ -74,12 +74,13 @@ public class CardStack extends JLayeredPane
 
     public synchronized Card pop()
     {
-	Card card = peek();
-
-        this.remove(card);
-	cards.remove(cards.size() - 1);
-
-	return card;
+    	if(!this.isEmpty()){
+	    	Card card = peek();
+	        this.remove(card);
+	        cards.remove(cards.size() - 1);
+	        return card;
+    	}
+    	return null;
     }
 
     public CardStack pop(CardStack stack)

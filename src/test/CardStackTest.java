@@ -69,6 +69,16 @@ public class CardStackTest {
 	}
 	
 	/**
+	 * Test pop
+	 */
+	@Test
+	public void testPop(){
+		assertTrue(cardStack.pop()==null);
+		Card testCard = getCardFromHashMap(Card.CLUBS_SUIT, 2);
+		cardStack.push(testCard);
+		assertTrue(cardStack.pop()==testCard);
+	}
+	/**
 	 * Test addCard and peek method
 	 * This test also tests peeking an empty stack
 	 */
