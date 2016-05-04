@@ -29,7 +29,7 @@ public class ColumnTest {
 		card1 = new Card("Hearts", 13, 1, 1);
 		card2 = new Card("Spades", 12, 1, 2);
 		card3 = new Card("Diamonds", 12, 1, 3);
-		card4 = new Card("Spades", 11, 1, 4);
+		card4 = new Card("Clubs", 12, 1, 4);
 		column1 = new Column();
 		
 	}
@@ -46,9 +46,9 @@ public class ColumnTest {
 	@Test
 	public void testIsValidMoveCard() {
 		column1.push(card1);
-		assertTrue("This is not a valid move", column1.isValidMove(card2));
-		assertTrue("This is not a valid move", column1.isValidMove(card3));
-		assertTrue("This is not a valid move", column1.isValidMove(card4));
+		assertTrue("This is a valid move", column1.isValidMove(card2));
+		assertFalse("This is not a valid move", column1.isValidMove(card3));
+		assertTrue("This is a valid move", column1.isValidMove(card4));
 	}
 	
 	
